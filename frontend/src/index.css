@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0c11;
+    color: #e5e3de;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-display);
+  }
+
+  .font-serif-quote {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Luxury Editorial Quill Dark Studio Theme */
+.ql-toolbar.ql-snow {
+  background: #14151e !important;
+  border-color: #272836 !important;
+  border-top-left-radius: 0.85rem !important;
+  border-top-right-radius: 0.85rem !important;
+  padding: 0.85rem !important;
+}
+
+.ql-toolbar.ql-snow .ql-stroke {
+  stroke: #a5a29a !important;
+}
+
+.ql-toolbar.ql-snow .ql-fill {
+  fill: #a5a29a !important;
+}
+
+.ql-toolbar.ql-snow .ql-picker {
+  color: #a5a29a !important;
+}
+
+.ql-toolbar.ql-snow button:hover .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-stroke {
+  stroke: #f59e0b !important;
+}
+
+.ql-toolbar.ql-snow button:hover .ql-fill,
+.ql-toolbar.ql-snow .ql-picker-label:hover .ql-fill {
+  fill: #f59e0b !important;
+}
+
+.ql-toolbar.ql-snow .ql-picker-options {
+  background-color: #1a1b26 !important;
+  border-color: #2e3042 !important;
+  color: #e5e3de !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.ql-container.ql-snow {
+  background: #0f1017 !important;
+  border-color: #272836 !important;
+  border-bottom-left-radius: 0.85rem !important;
+  border-bottom-right-radius: 0.85rem !important;
+  font-size: 0.95rem !important;
+  color: #ede9e1 !important;
+  min-height: 420px !important;
+  letter-spacing: 0.01em;
+}
+
+.ql-editor {
+  min-height: 400px !important;
+  line-height: 1.8 !important;
+  padding: 1.5rem !important;
+  color: #ede9e1 !important;
+}
+
+.ql-editor blockquote {
+  border-left: 3px solid #e5a93c !important;
+  background: rgba(229, 169, 60, 0.06) !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 0 0.5rem 0.5rem 0 !important;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #fef3c7 !important;
+}
+
+.ql-editor.ql-blank::before {
+  color: #6a6863 !important;
+  font-style: normal !important;
+}
+
+/* Smooth warm amber scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2c3a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* Subtle ambient radial light for depth */
+.ambient-glow-amber {
+  background: radial-gradient(circle at 50% 0%, rgba(229, 169, 60, 0.08) 0%, transparent 60%);
+}
